@@ -108,7 +108,15 @@ class ViewController: UIViewController {
      * Start Your Code Here For Stretch #4
      ***************************************************/
     func countTheCharacters(sentence: String) -> (String, String) {
-        return sentence.
+            var numberOfVowels: Int {
+                let vowels = "aeiou"
+                let vowelsSet = NSCharacterSet(charactersIn: vowels)
+                let strippedComponents = lowercaseString.componentsSeparatedByCharactersInSet(vowelsSet)
+                let stripped = strippedComponents.joinWithSeparator("")
+                return Character.count - stripped.characters.count
+            
+        }
+        return sentence.numberOfVowels
     }
     /***************************************************
      * End Your Code Here For Stretch #4
