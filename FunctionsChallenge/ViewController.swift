@@ -30,14 +30,14 @@ class ViewController: UIViewController {
                 /***************************************************
                 * Start Your Code Here For MVP
                 ***************************************************/
-                
+                displayMVP()
                 /***************************************************
                 * End Your Code Here For MVP
                 ***************************************************/
                 break
             case 2:
                 //Uncomment the line below for Stretch #1
-                //output1 = returnAString()
+                output1 = returnAString()
                 myTextView.text = output1
             case 3:
                 //Uncomment the line below for Stretch #2
@@ -75,7 +75,9 @@ class ViewController: UIViewController {
     /***************************************************
      * Start Your Code Here For Stretch #1
      ***************************************************/
-    
+    func returnAString() -> String {
+        return "Stretch #1 Complete."
+    }
     /***************************************************
      * End Your Code Here For Stretch #1
      ***************************************************/
