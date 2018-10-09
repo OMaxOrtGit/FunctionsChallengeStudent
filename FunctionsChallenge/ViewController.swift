@@ -41,11 +41,11 @@ class ViewController: UIViewController {
                 myTextView.text = output1
             case 3:
                 //Uncomment the line below for Stretch #2
-                //output2 = createSentence("Swift")
+                output2 = createSentence(language: "Swift")
                 myTextView.text = output2
             case 4:
                 //Uncomment the line below for Stretch #3
-                //output3 = createFruitLovingSentence("apples", fruitTwo: "bananas")
+                output3 = createFruitLovingSentence(fruitOne: "apples", fruitTwo: "bananas")
                 myTextView.text = output3
             case 5:
                 //Uncomment the two lines below for Stretch #4
@@ -85,7 +85,10 @@ class ViewController: UIViewController {
     /***************************************************
     * Start Your Code Here For Stretch #2
     ***************************************************/
-
+    func createSentence(language: String) -> String {
+        
+        return "I love programming with " + language
+    }
     /***************************************************
     * End Your Code Here For Stretch #2
     ***************************************************/
@@ -93,7 +96,10 @@ class ViewController: UIViewController {
     /***************************************************
     * Start Your Code Here For Stretch #3
     ***************************************************/
-
+    func createFruitLovingSentence(fruitOne: String, fruitTwo: String) -> String {
+        
+        return "I love " + fruitOne + " and " + fruitTwo
+    }
     /***************************************************
     * End Your Code Here For Stretch #3
     ***************************************************/
