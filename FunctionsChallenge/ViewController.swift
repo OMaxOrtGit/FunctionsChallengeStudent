@@ -49,14 +49,14 @@ class ViewController: UIViewController {
                 myTextView.text = output3
             case 5:
                 //Uncomment the two lines below for Stretch #4
-                //let sentence = "Here is my sentence"
-                //output4 = "\(sentence), has \(countTheCharacters(sentence)) characters"
+                let sentence = "Here is my sentence"
+                output4 = "\(sentence), has \(countTheCharacters(sentence: sentence)) characters"
                 myTextView.text = output4
             case 6:
                 //Uncomment the three lines below for Stretch #5
-                //let sentence = "Here is my sentence"
-                //let tuple = findVowelsConsonants(sentence)
-                //output5 = sentence + ", has:\n" + "Vowels:\(tuple.0) Consonants:\(tuple.1)"
+                let sentence = "Here is my sentence"
+                let tuple = findVowelsConsonants(sentence: sentence)
+                output5 = sentence + ", has:\n" + "Vowels:\(tuple.0) Consonants:\(tuple.1)"
                 myTextView.text =  output5
             default:
                 //Uncomment the three lines below for Stretch #6
@@ -97,7 +97,7 @@ class ViewController: UIViewController {
     * Start Your Code Here For Stretch #3
     ***************************************************/
     func createFruitLovingSentence(fruitOne: String, fruitTwo: String) -> String {
-            
+        
         return "I love " + fruitOne + " and " + fruitTwo
     }
     /***************************************************
@@ -107,7 +107,9 @@ class ViewController: UIViewController {
     /***************************************************
      * Start Your Code Here For Stretch #4
      ***************************************************/
-    
+    func countTheCharacters(sentence: String) -> (String, String) {
+        return sentence.
+    }
     /***************************************************
      * End Your Code Here For Stretch #4
      ***************************************************/
@@ -115,7 +117,10 @@ class ViewController: UIViewController {
     /***************************************************
     * Start Your Code Here For Stretch #5
     ***************************************************/
-
+    func findVowelsConsonants(sentence: String) -> Int {
+        
+        return sentence.count
+    }
     /***************************************************
     * End Your Code Here For Stretch #5
     ***************************************************/
