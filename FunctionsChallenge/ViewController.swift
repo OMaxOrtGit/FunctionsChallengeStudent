@@ -97,7 +97,7 @@ class ViewController: UIViewController {
     * Start Your Code Here For Stretch #3
     ***************************************************/
     func createFruitLovingSentence(fruitOne: String, fruitTwo: String) -> String {
-        
+            
         return "I love " + fruitOne + " and " + fruitTwo
     }
     /***************************************************
