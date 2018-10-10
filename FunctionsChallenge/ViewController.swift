@@ -107,16 +107,8 @@ class ViewController: UIViewController {
     /***************************************************
      * Start Your Code Here For Stretch #4
      ***************************************************/
-    func countTheCharacters(sentence: String) -> (String, String) {
-            var numberOfVowels: Int {
-                let vowels = "aeiou"
-                let vowelsSet = NSCharacterSet(charactersIn: vowels)
-                let strippedComponents = lowercaseString.componentsSeparatedByCharactersInSet(vowelsSet)
-                let stripped = strippedComponents.joinWithSeparator("")
-                return Character.count - stripped.characters.count
-            
-        }
-        return sentence.numberOfVowels
+    func countTheCharacters(sentence: String) -> (Int) {
+        return sentence.count
     }
     /***************************************************
      * End Your Code Here For Stretch #4
@@ -125,9 +117,21 @@ class ViewController: UIViewController {
     /***************************************************
     * Start Your Code Here For Stretch #5
     ***************************************************/
-    func findVowelsConsonants(sentence: String) -> Int {
+    func findVowelsConsonants(sentence: String) -> (Int, Int) {
+        let num = sentence.count
+        var hi = sentence
         
-        return sentence.count
+        for _ in 0..<num {
+            hi = hi.replacingOccurrences(of: "a", with: "")
+            hi = hi.replacingOccurrences(of: "e", with: "")
+            hi = hi.replacingOccurrences(of: "i", with: "")
+            hi = hi.replacingOccurrences(of: "o", with: "")
+            hi = hi.replacingOccurrences(of: "u", with: "")
+            
+        }
+        let vowelV = num - hi.count
+        let nVowelV = num - vowelV
+        return (vowelV, nVowelV)
     }
     /***************************************************
     * End Your Code Here For Stretch #5
